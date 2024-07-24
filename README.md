@@ -7,6 +7,8 @@ The new version of netbox can also be used by pulling the latest changes as ther
 I have added the database, redis and cache configuration that can be imported from env variables
 
 You need to do the following steps to run the container and create the image
+
+**STEPS TO SETUP**
 clone this repository in your local system then navigate to the root folder where docker-compose file is located then run the following command-
 
 1. docker-compose up -d  (make sure docker and docker-compose is already installed in your system)
@@ -17,7 +19,7 @@ You can see the logs of netbox container using
 
 2. docker-compose logs -f netbox
    
-Netbox container will take some time(probably 5 minutes) to get healthy as there are multiple commands running in startup.sh file, you can change that.
+Netbox container will take some time(probably 5 minutes) to get healthy as there are multiple commands running in startup.sh file, you can change that to reduce the time.
 Your netbox container is now running, you can access the netbox on http://localhost:8002
 
 You need to create superuser for netbox before loging in to netbox
